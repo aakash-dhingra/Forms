@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>My Bio Data</h1>
+    <form action="#" method="GET">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="firstname">FirstName:</label>
+            <input type="text" id="firstname" placeholder="First Name" name="user" required>
+            <label for="lastname">LastName:</label>
+            <input type="text" id="lastname" placeholder="Last Name" name="user" required>
+            <br>
+            <br>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female">
+            <label for="others">Others</label>
+            <input type="radio" name="gender" id="others">
+            <br>
+            <br>
+            Date of Birth:
+            <input type="date" required-patten>
+            <br>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Enter your Email" id="email">
+            <br>
+            <br>
+            <label for="tel">Phone</label>
+            <input type="tel" id="tel" maxlength="10" placeholder="+91">
+            <br><br>
+            Height:
+            <input type="text" placeholder="Height in feet">
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Educational</legend>
+            School Name:
+            <input type="text" placeholder="School Name">
+            <br><br>
+            Class:
+            <input type="text" placeholder="Enter Class">
+            <br><br>
+            Stream:
+            <select>
+                <option>Stream</option>
+                <option>Non-Medical</option>
+                <option>Medical</option>
+                <option>Commerce</option>
+                <option>Humanities</option>
+            </select>
+            <br><br>
+            <label for="marksheet">Marksheet:</label>
+            <input type="file" id="marksheet">
+        </fieldset>
+
+        <br><br>
+        <input type="submit">
+    </form>
+
+</body>
+
+</html>
